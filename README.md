@@ -3,7 +3,7 @@ Apereo CAS WAR Overlay Standalone - Accept http://localhost:5000
 
 WAR Overlay Type: `cas-overlay`
 
-Forked from https://gitub.com/apereo/cas-overlay-template
+Forked from https://github.com/apereo/cas-overlay-template
 
 # Changes from apereo version
 - Only tested on linux
