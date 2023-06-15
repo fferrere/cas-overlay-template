@@ -30,7 +30,16 @@ COPY --from=overlay cas-overlay/build/libs/cas.war cas-overlay/
 COPY etc/cas/ /etc/cas/
 COPY etc/cas/config/ /etc/cas/config/
 COPY etc/cas/services/ /etc/cas/services/
-COPY etc/cas/saml/ /etc/cas/saml/
+
+
+RUN keytool -genkeypair \
+            -alias cas \
+            -keyalg RSA \
+            -keypass changeit \
+            -storepass changeit \
+            -keystore /etc/cas/thekeystore \
+            -dname "CN=www.exemple.org, OU=Caveman, O=Common Lisp, L=Lisp, ST=Lisp, C=ORG" \
+            -ext SAN=dns:localhost
 
 EXPOSE 8080 8443
 

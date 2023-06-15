@@ -1,0 +1,10 @@
+{
+  "@class" : "org.apereo.cas.services.CasRegisteredService",
+  "serviceId" : "^http://localhost:5000/.*",
+  "name" : "casdemo",
+  "id" : 1686505388,
+  "description" : "This service definition authorizes all application urls from localhost.",
+  "evaluationOrder" : 1,
+  "logoutType" : "BACK_CHANNEL",
+  "logoutUrl" : "http://localhost:5000/logout",
+}

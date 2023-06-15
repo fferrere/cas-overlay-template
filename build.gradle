@@ -144,6 +144,8 @@ dependencies {
     implementation "org.apereo.cas:cas-server-core-api-configuration-model"
     implementation "org.apereo.cas:cas-server-webapp-init"
 
+    implementation "org.apereo.cas:cas-server-support-json-service-registry:${project.'cas.version'}"
+
     developmentOnly "org.springframework.boot:spring-boot-devtools:${project.springBootVersion}"
         
     /**
